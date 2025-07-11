@@ -5,21 +5,7 @@
 # Executables
 *.exe
 *.out
-*.app
-*.dll
-*.so
-*.dylib
 
 
 # IDE specific files
-.vscode/ # VS Code settings, if you don't want to share them
-.idea/ # IntelliJ/CLion IDEA files
-*.iml # IntelliJ IDEA module files
-*.swp # Vim swap files
-*~    # Emacs backup files
-*.bak # Backup files
-
-
-# Miscellaneous
-.DS_Store # macOS specific file
-Thumbs.db # Windows specific file
+.vscode/
