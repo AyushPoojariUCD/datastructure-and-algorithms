@@ -1,4 +1,4 @@
-# datastructure-and-algorithms
+# Datastructure-and-Algorithms
 
 ---
 
