@@ -1,15 +1,5 @@
 class Solution {
-  public:
-    int inversionCount(vector<int> &arr) {
-        int n = arr.size();
-        if (n <= 1) return 0;
-        vector<int> temp(n);
-        long long inv = mergeSortCount(arr, temp, 0, n - 1);
-        // If you expect very large counts, change return type to long long.
-        return (int)inv;
-    }
-
-  private:
+ private:
     long long mergeSortCount(vector<int>& a, vector<int>& temp, int l, int r) {
         if (l >= r) return 0;
         int m = l + (r - l) / 2;
@@ -43,5 +33,15 @@ class Solution {
         for (int idx = l; idx <= r; ++idx) a[idx] = temp[idx];
 
         return inv;
+    }
+    
+  public:
+    int inversionCount(vector<int> &arr) {
+        int n = arr.size();
+        if (n <= 1) return 0;
+        vector<int> temp(n);
+        long long inv = mergeSortCount(arr, temp, 0, n - 1);
+        // If you expect very large counts, change return type to long long.
+        return (int)inv;
     }
 };
