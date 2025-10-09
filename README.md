@@ -6,28 +6,14 @@ Just a coder sharpening my **data structures and algorithms** skills. This repo 
 
 Expect a mix of classic problems and my ongoing journey through fundamental computer science topics, primarily implemented in **C++**.
 
-## What's Inside (Coming Soon!)
+## Define Aliases
 
-* Implementations of common data structures (e.g., Arrays, Linked Lists, Trees, Graphs, Hash Tables)
-* Solutions to popular algorithms (e.g., Sorting, Searching, Dynamic Programming, Recursion)
-* My notes and thoughts as I tackle problems
+| Alias                                     | Meaning                         | Example                           |
+| ----------------------------------------- | ------------------------------- | --------------------------------- |
+| `using ull = unsigned long long;`         | unsigned 64-bit                 | `ull big = 1ULL << 63;`           |
+| `using pii = pair<int, int>;`             | shorthand for pair              | `pii p = {1, 2};`                 |
+| `using vi = vector<int>;`                 | shorthand for vector<int>       | `vi arr = {1,2,3};`               |
+| `using vll = vector<long long>;`          | shorthand for vector<long long> | `vll nums = {10,20,30};`          |
+| `using pll = pair<long long, long long>;` | pair of long longs              | `pll p = {1000000, 2000000};`     |
+| `using vvi = vector<vector<int>>;`        | 2D vector shorthand             | `vvi grid(3, vector<int>(3, 0));` |
 
-## Getting Started
-
-This repository is mainly for my own practice, but you're welcome to explore the code.
-
-To run any specific implementation:
-
-1.  Clone this repository:
-    `git clone https://github.com/AyushPoojariUCD/datastructure-and-algorithms.git`
-2.  Navigate to the specific folder for the data structure or algorithm you're interested in.
-3.  Follow any specific instructions in that folder (e.g., compile and run a Java file, execute a Python script).
-
-## Contribution
-
-This is primarily a personal learning repository, so I'm not actively seeking external contributions right now. However, if you find an issue or have a suggestion, feel free to open an issue!
-
-
----
-
-Happy coding!
