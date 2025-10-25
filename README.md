@@ -18,7 +18,7 @@ Expect a mix of classic problems and my ongoing journey through fundamental comp
 | `using vvi = vector<vector<int>>;`        | 2D vector shorthand             | `vvi grid(3, vector<int>(3, 0));` |
 
 
-# ⚙️ Operator Performance and CPU Cost Guide (C++)
+# Operator Performance and CPU Cost Guide (C++)
 
 This document provides a **performance overview** of common C++ operators —  
 their **relative CPU expense**, **execution behavior**, and **optimization notes**.
