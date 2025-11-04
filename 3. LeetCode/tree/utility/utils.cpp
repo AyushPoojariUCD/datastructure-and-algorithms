@@ -147,10 +147,10 @@ public:
     void structuralInfo() {
         cout << "Height: " << height(root) << endl;
         cout << "Diameter: " << diameter(root) << endl;
+        cout << "Is Balanced: " << (isBalanced(root) ? "Yes" : "No") << endl;
         cout << "Total Nodes: " << countNodes(root) << endl;
         cout << "Leaf Nodes: " << countLeafNodes(root) << endl;
         cout << "Internal Nodes: " << countInternalNodes(root) << endl;
-        cout << "Is Balanced: " << (isBalanced(root) ? "Yes" : "No") << endl;
         cout << "Is Symmetric: " << (isSymmetric(root) ? "Yes" : "No") << endl;
         cout << "Max Width: " << maxWidth(root) << endl;
 
