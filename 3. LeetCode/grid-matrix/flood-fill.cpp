@@ -3,6 +3,16 @@
 #include<iostream>
 using namespace std;
 
+// Print Array
+void printArray(vector<vector<int>>& image){
+    for(int i = 0; i < image.size(); i++){
+        for(int j = 0; j < image[0].size(); j++){
+            cout << image[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
 // DFS
 void dfs(int row, int col, int m, int n, int originalColor, int color, vector<vector<int>>& image){
     if(row < 0 || col < 0 || row >= m || col >= n) return;
@@ -62,12 +72,11 @@ int main(){
     };
     int color = 2;
     int sr = 1, sc = 1;
+    cout << "Before Flood Fill:" << endl;
+    printArray(image);
     floodFill(image,sr,sc,color);
-    for(int i = 0; i < image.size(); i++){
-        for(int j = 0; j < image[0].size(); j++){
-            cout << image[i][j] << " ";
-        }
-        cout << endl;
-    }
+    cout << endl;
+    cout << "After Flood Fill:" << endl;
+    printArray(image);
     return 0;
 }
